@@ -63,13 +63,19 @@ nav ul li a:hover {
 
 
 @media screen and (min-width: 768px) {
-    .grid {
+    /* .grid {
         display: grid;
         grid-template-columns: auto;
         gap: 20px;
         padding: 20px;
         text-align: center;
         align-items: center;
+    } */
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Two-column layout */
+        gap: 20px;
+        padding: 40px;
     }
     main {
         padding: 20px;
@@ -84,7 +90,9 @@ nav ul li a:hover {
         font-size: 30px;
         color: #333; 
     }
-    
+    /* head.title {
+        font-size: 50px;
+    } */
     main p {
         color: #333; 
     }

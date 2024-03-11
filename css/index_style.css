@@ -1,28 +1,28 @@
-a.skip-to-content {
-    position: relative;
-    top: -40px; 
-    left: 0; 
-    display: block; 
-    z-index: 1000; 
-    
-    /* visibility:hidden ;  */
-    color: #000000;
-}
-a.skip-to-content:focus {
-    top: 20px; 
-    /* visibility: visible;  */
-    position: relative;
-    width: auto;
-    height: auto;
-    color: #ffffff
-}
-
 body {
     font-family: Arial, sans-serif; 
     margin: 0;
     padding: 0;
     background-color: #f2f2f2; 
 }
+a.skip-to-content {
+    position: relative;
+    top: -40px; 
+    left: 0; 
+    display: block; 
+    z-index: 1000; 
+    color: #000000;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+a.skip-to-content:focus {
+    top: 20px; 
+    position: relative;
+    width: auto;
+    height: auto;
+    color: #ffffff
+}
+
 
 header {
     background-color: #333;
