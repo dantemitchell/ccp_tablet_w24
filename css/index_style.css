@@ -1,27 +1,20 @@
-@media (max-width: 600px) {
-    .skip-to-content {
-        display: none;
-    }
+a.skip-to-content {
+    position: relative;
+    top: -40px; 
+    left: 0; 
+    display: block; 
+    z-index: 1000; 
     
-.skip-to-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #bd0909;
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
-    display: none;
+    /* visibility:hidden ;  */
+    color: #000000;
 }
-
-.skip-to-content:focus {
-    display: initial;
-}
-.skip-to-content:focus {
-    outline: 2px solid transparent;
-}
-
-
+a.skip-to-content:focus {
+    top: 20px; 
+    /* visibility: visible;  */
+    position: relative;
+    width: auto;
+    height: auto;
+    color: #ffffff
 }
 
 body {
@@ -48,6 +41,10 @@ nav ul li {
     display: inline;
     margin-right: 10px;
 }
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
 .active {
     text-decoration: underline;
     font-weight: bold;
@@ -64,15 +61,11 @@ nav ul li a:hover {
     color: #ffffff; 
     border-bottom-color: #cc5500; 
 }
-nav ul li a {
-    color: #000;
-    text-decoration: none;
-    font-size: 16px; 
-    
-}
+
 
 main {
     padding: 20px;
+    background-color: #cc5500;
 }
 
 main div {
@@ -84,12 +77,12 @@ main h1 {
 }
 
 main p {
-    color: #666; 
+    color: #333; 
 }
 
 main ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
 }
 
 main ul li {
@@ -97,3 +90,33 @@ main ul li {
 }
 
 
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+    main {
+        padding: 40px;
+    }
+
+    main div {
+        margin-bottom: 40px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        padding: 40px;
+    }
+}
