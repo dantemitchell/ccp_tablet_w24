@@ -1,5 +1,4 @@
-@media (max-width: 600px) {
-    a.skip-to-content {
+a.skip-to-content {
         display: none;
     }
     
@@ -24,7 +23,7 @@ a.skip-to-content:focus {
     display: initial;
 }
 
-}
+
 body {
     margin: 0;
     padding: 0;
@@ -73,9 +72,11 @@ nav ul li a:hover {
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: auto;
     gap: 20px;
     padding: 20px;
+    text-align: center;
+    align-items: center;
 }
 
 .recipe {
