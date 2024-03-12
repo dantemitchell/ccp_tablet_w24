@@ -8,18 +8,16 @@ header {
 }
 a.skip-to-content {
     position: relative;
-    /* display: none; */
     top: -40px; 
     left: 0; 
-    /* display: block;  */
     z-index: 1000; 
     color: #ffffff;
 }
 a.skip-to-content:focus {
     top: 20px; 
-    /* position: relative; */
-    /* width: auto; */
-    /* height: auto; */
+    position: relative;
+    width: auto;
+    height: auto;
     color: #ffffff
 }
  
@@ -94,7 +92,7 @@ nav ul li a:hover {
 @media screen and (min-width: 768px) {
     .grid {
         display: grid;
-        grid-template-columns: 1fr 2fr; /* Two-column layout */
+        grid-template-columns: 1fr 2fr; 
         gap: 20px;
         padding: 40px;
         }
